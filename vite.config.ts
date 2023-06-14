@@ -14,7 +14,7 @@ export default ({ command, mode }: ConfigEnv): UserConfigExport => {
   // 获取各种环境下对应的变量
   const env = loadEnv(mode, process.cwd())
   return {
-    base: 'base',
+    base: '/vue-admin/',
     plugins: [
       VueSetupExtend(),
       DefineOptions(),
